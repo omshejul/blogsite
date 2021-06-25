@@ -3,22 +3,31 @@
     --background: #292929;
 }
 
+
+
 *, *::before,*after {
     box-sizing: border-box;
 }
-h1{
-    color: #83b2e7;
+.main_body{
+    padding: 10vw;
+
+}
+.main_body *{
+    color: rgb(255, 255, 255);
+    max-width: 65ch;
+}
+h1,h2,h3{
+    color: #83b2e7 !important;
 }
 
 body{
     margin: 0;
-    background: rgb(82, 82, 82);
+    background: #1a1c1e;
     font-family: 'Work Sans','sans-serif';
     font-weight: 400;
 }
 
 .content {
-    height: 200vh;
     background-color: rgb(78, 78, 78);
     display: grid;
 
