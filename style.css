@@ -6,6 +6,9 @@
 *, *::before,*after {
     box-sizing: border-box;
 }
+h1{
+    color: #83b2e7;
+}
 
 body{
     margin: 0;
@@ -85,7 +88,7 @@ nav a:hover{
 .nav-toggle-label span::before,
 .nav-toggle-label span::after{
     display: block;
-    background: white;
+    background: rgb(255, 255, 255);
     height: 2px;
     width: 2em;
     border-radius: 2px;
@@ -102,4 +105,63 @@ nav a:hover{
 }
 .nav-toggle-label span::after{
     top:7px
+}
+
+@media screen and (min-width: 700px) {
+  /* ---------------------------------------------------------------- */
+
+    .nav-toggle-label{
+        display: none;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 1fr auto minmax(500px, 4fr) 1fr;
+    }
+    .logo{
+        grid-column: 2 / 3;
+    }
+    nav{
+        all:unset;
+        grid-column: 3/4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+    nav ul{
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav li{
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+    nav a::after{
+        content: '';
+        display: block;
+        height: 4px;
+        background: #5b8cba;
+        border-radius: 16px;
+        position: absolute;
+        top: 1.3em;
+        left: 0;
+        right: 0;
+        transform: scale(0,1);
+        transform-origin: center;
+        transition: transform ease-in-out 90ms;
+    }
+    nav a:hover::after{
+        transform: scale(1,1);
+        transition: transform ease-in-out 100ms;
+    }
+
+
+
+
+
+
+  /* ---------------------------------------------------------------- */
 }
