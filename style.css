@@ -58,7 +58,6 @@ body{
     font-weight: 400;
 }
 p, p *{
-    font-family: 'Ubuntu', sans-serif;
     line-height:140%;
     text-align: justify;
 }
