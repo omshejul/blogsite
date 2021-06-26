@@ -2,20 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 /* :root{
     --background: #d5f7ff;
-    --background-dark: #ffffff;
+    --background-dark: #48b2b8;
     --color: #237689;
     --color-light: #154a87;
     --black:#ffffff;
     --white:#000000;
 } */
 :root{
+    --background: #0f1822;
+    --background-dark: #000000;
+    --color: #0077ff;
+    --color-light: #3a96ff;
+    --black:#000000;
+    --white:#ffffff;
+}
+/* :root{
     --background: #292929;
     --background-dark: #1a1c1e;
     --color: #469cff;
     --color-light: #81b7f5;
     --black:#000000;
     --white:#ffffff;
-}
+} */
 b{
     color: var(--color-light) !important;
 }
@@ -28,7 +36,7 @@ b{
 }
 .main_body{
     display:inline-block;
-    margin: 8vw 5vw 5vw 5vw ;
+    margin: 15vmax 5vw 5vw 5vw ;
     padding: 5vw;
     background-color: var(--background);
     border-radius: 2vw;
