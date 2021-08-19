@@ -36,7 +36,7 @@ b{
 }
 .main_body{
     display:inline-block;
-    margin: 15vmax 5vw 5vw 5vw ;
+    margin: 30vw 5vw 5vw 5vw;
     padding: 5vw;
     background-color: var(--background);
     border-radius: 2vw;
@@ -69,6 +69,10 @@ p, p *{
 }
 
 /* nav */
+.logo > img{
+    width: 50vw;
+    max-height: 100px;
+}
 .logo, .logo * {
     text-decoration: none;
     color: var(--color);
@@ -97,7 +101,7 @@ nav{
     transition: transform 400ms ease-in-out;
 }
 nav ul{
-    margin: 0;
+    margin: 0px;
     padding: 0;
     list-style: none;
 }
@@ -211,10 +215,18 @@ nav a:hover{
         transition: transform ease-in-out 100ms;
     }
     .main_body{
-        margin: 12vw 5vw 5vw 5vw ;
-        padding: 5vw;
+        margin: 190px 5vw 5vw 5vw ;
         border-radius: 1.5vw;
-    
+        padding: 5vw;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: auto 36%;
+
+    }
+    .sidebar{
+    background: #f3d0c7;
+    padding-top: 15vw;
     }
 
 
